@@ -1,0 +1,24 @@
+# Root Cargo.toml
+[package]
+name = "come-stablecoin"
+version = "0.1.0"
+authors = ["Sumanth <saisumanthvadla@gmail.com>"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+dharitri-sc = "0.43.4"
+dharitri-sc-derive = "0.43.4"
+
+[dev-dependencies]
+dharitri-sc-scenario = "0.43.4"
+
+[workspace]
+members = [
+    ".",
+    "meta",
+    "tests",
+]

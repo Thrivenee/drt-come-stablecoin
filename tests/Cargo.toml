@@ -1,0 +1,17 @@
+# tests/Cargo.toml
+[package]
+name = "come-stablecoin-tests"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dev-dependencies]
+dharitri-sc-scenario = "0.43.4"
+
+[dependencies]
+come-stablecoin = { path = ".." }
+dharitri-sc = "0.43.4"
+dharitri-sc-derive = "0.43.4"
